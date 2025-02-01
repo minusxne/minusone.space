@@ -1,1 +1,66 @@
-hello world
+<head>
+    <!-- Link to Google Fonts for the pixel font (Press Start 2P) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="spline-container">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/t1Tr5TcAVTqiMuFg/scene.splinecode"></spline-viewer>
+      
+      <!-- Title -->
+      <div class="title">minusone.space</div>
+      <div class="subtitle">in progress</div>
+    </div>
+  
+    <style>
+      /* Set background color for the entire website */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black; /* Set the entire background of the site to black */
+        font-family: 'Press Start 2P', cursive; /* Apply the pixel font */
+      }
+  
+      /* Spline Container */
+      .spline-container {
+        position: relative;
+        width: 100%;
+        height: 1000px; /* Set the height you want */
+        clip-path: inset(0 0 100px 0); /* Clips the bottom 100px */
+      }
+  
+      /* Spline Viewer */
+      spline-viewer {
+        width: 100%;
+        height: 100%;
+      }
+  
+      /* Title Styling */
+      .title {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        color: white; /* White text color */
+        font-size: 32px; /* Adjust font size for better appearance */
+        text-align: center;
+        font-weight: normal; /* Use regular weight for the pixel font */
+        letter-spacing: 2px; /* Space out the letters for better legibility */
+      }
+
+      /* Subitle Styling */
+      .subtitle {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        color: white; /* White text color */
+        font-size: 22px; /* Adjust font size for better appearance */
+        text-align: center;
+        font-weight: normal; /* Use regular weight for the pixel font */
+        letter-spacing: 2px; /* Space out the letters for better legibility */
+      }
+    </style>
+  </body>
+  
